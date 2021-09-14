@@ -8,6 +8,7 @@ route.get('/',async function(req, res) {
   const listofCourses=await courseModel.find()
     // .populate('StdID','name')
     .select('name StdID');
+    //kk
     res.send(listofCourses);
 });
 
